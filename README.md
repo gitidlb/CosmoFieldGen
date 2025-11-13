@@ -4,9 +4,16 @@ This repository provides tools, scripts, and documentation to generate density f
 It covers the full workflow:
 
 ✔ Read Quijote particle snapshots
+
 ✔ CIC / PCS mass-assignment to 128³ / 256³ grids
+
 ✔ Generate dark matter density fields
+
 ✔ Apply redshift-space distortions (RSD)
+
 ✔ Generate halo catalogs + voxelize into halo density fields
+
 ✔ Normalize fields (ρ/ρ̄ − 1)
+
 ✔ Prepare cosmological denisty fields for machine learning models
+
