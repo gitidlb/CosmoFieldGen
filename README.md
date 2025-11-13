@@ -3,17 +3,17 @@ Tools and scripts to generate cosmological density fields (DM, halo, RSD) from Q
 This repository provides tools, scripts, and documentation to generate density fields from the lating hypercube sets of Quijote simulation suite. 
 It covers the full workflow:
 
-✔ Read Quijote particle snapshots
+Read Quijote particle snapshots
 
-✔ CIC / PCS mass-assignment to 128³ / 256³ grids
+CIC / PCS mass-assignment to 128³ / 256³ grids
 
-✔ Generate dark matter density fields
+Generate dark matter density fields
 
-✔ Apply redshift-space distortions (RSD)
+Apply redshift-space distortions (RSD)
 
-✔ Generate halo catalogs + voxelize into halo density fields
+Generate halo catalogs + voxelize into halo density fields
 
-✔ Normalize fields (ρ/ρ̄ − 1)
+Normalize fields (ρ/ρ̄ − 1)
 
-✔ Prepare cosmological denisty fields for machine learning models
+Prepare cosmological denisty fields for machine learning models
 
