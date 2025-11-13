@@ -12,33 +12,29 @@ We generate both:
 You can download the Quijote snapshots directly from the official website:  
 🔗 https://quijote-simulations.readthedocs.io/
 
-After downloading the particle snapshots at the desired redshifts (z = 127 and z = 0), use the scripts in this repository to voxelize the data into 3D or 2D density grids at resolutions such as **64³, 128³, 256³, or 512³**.  
+The snapshots are stored in either Gadget-II format or HDF5. They can be read using the readgadget.py and readsnap.py scripts. If you have Pylians installed you already have them. After downloading the particle snapshots at the desired redshifts (z = 127 and z = 0), use the scripts in this repository to voxelize the data into 3D or 2D density grids at different resolutions.  
 The default simulation box size for the Latin Hypercube set is **1000 Mpc/h**.
 
-## 📁 What This Repository Generates
+## What This Repository Generates
 
 ### 1. Generate Dark Matter Density Fields  
 Convert particle snapshots into 3D voxel grids using **CIC** or **PCS** mass-assignment schemes.  
 Supports multiple resolutions and both **z = 127** (initial condition) and **z = 0** (nonlinear) snapshots.
 
----
 
 ### 2. Generate Redshift-Space Distorted (RSD) Fields  
 Apply line-of-sight velocity corrections to particles and reconstruct the corresponding **nonlinear RSD** density fields.
 
----
 
 ### 3. Generate Halo Density Fields  
 Read FoF halo catalogs, apply user-defined **mass cuts**, and voxelize halos into 3D density grids using CIC/PCS.  
 RSD can be applied to halo positions as well.
 
----
 
 ### 4. Generate 2D Projected Density Fields  
 Create 2D slices from 3D density grids using **central-slab projection** with mean/median/max aggregation.  
 This functionality is implemented in `Generate_train_2D_samples.py`.
 
----
 
 ### 5. Precompute Velocity-Field Features  
 Transform 3D density fields into a **6-channel velocity-feature stack** using FFT-based operations in k-space.  
